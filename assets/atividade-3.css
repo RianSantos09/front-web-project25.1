@@ -5,3 +5,16 @@
     background-color: rgba(0, 0, 0, 0.136);
     border-radius: 18px;
 }
+
+#video{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.275); 
+    margin-top: 20px;
+    border-radius: 18px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+iframe{
+    border-radius: 10px;
+    border-color: black;
+}
