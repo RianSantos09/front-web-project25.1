@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <link rel="shortcut icon" href="/assets/img/logo-Urso.ico" type="image/x-icon"> <!-- Ícone da aba do navegador -->
+    <link rel="stylesheet" href="/assets/formulario.css"> <!-- Importa o arquivo de estilo CSS -->
+    <title>CADASTRO</title> <!-- Título da aba -->
+</head>
+<body>
+    <div class="form"> <!-- Div que centraliza e estiliza o formulário -->
+        <form action=""> <!-- Formulário (ação não definida) -->
+            <fieldset> <!-- Agrupamento de campos do formulário -->
+                <legend><b>CADASTRO</b></legend> <!-- Título do agrupamento -->
+                <br>
+
+                <!-- Campo para nome completo -->
+                <div class="inputdiv">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelinput">NOME COMPLETO</label>
+                </div>
+                <br><br>
+
+                <!-- Campo para telefone (label está com name "email", o que pode ser confuso) -->
+                <div class="inputdiv">
+                    <input type="tel" name="email" id="tel" class="inputUser" required>
+                    <label for="tel" class="labelinput">TELEFONE:</label>
+                </div>
+                <br>
+
+                <!-- Opção de receber promoções via WhatsApp -->
+                <p>DESEJA RECEBER PROMOÇOES VIA WHATSAPP?</p>
+                <input type="radio" name="promocoes" id="sim" value="sim" required>
+                <label for="sim">SIM</label>
+                <br>
+                <input type="radio" name="promocoes" id="nao" value="nao" required>                
+                <label for="nao">NÃO</label>
+                <br><br>
+
+                <!-- Campo para cidade -->
+                <div class="inputdiv">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="text" class="labelinput">CIDADE</label> 
+                <br><br>
+
+                <!-- Campo para estado -->
+                <div class="inputdiv">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="text" class="labelinput">ESTADO</label> 
+                </div>
+                <br><br>
+
+                <!-- Botão de envio -->
+                <input type="submit" nome="submit" id="submit"> 
+             
+                
+            </fieldset>     
+        </form>
+         <!-- Botão de retorno a pagina inicial-->
+        <a href="main.html">
+            <center><button class="butao">VOLTAR</button></center>
+        </a>
+    </div>
+    <div>
+        
+    </div>
+    
+</body>
+</html>
