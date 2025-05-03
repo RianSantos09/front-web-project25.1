@@ -1,2 +1,78 @@
 /*css dedicado a pagina principal, main.html */
 
+/* Resetando margens, preenchimentos e definindo box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do menu principal */
+.menu {
+    background-color: rgba(137, 43, 226, 0.245); /* Cor de fundo translúcida */
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+
+/* Estilização da navegação */
+nav {
+    display: flex; /* Utiliza flexbox para layout em linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaço entre os elementos (logo e menu) */
+}
+
+/* Estilização da logo dentro do nav */
+nav .logo > img {
+    width: 170px;
+    margin-left: 40px;
+}
+
+/* Remove marcadores da lista do menu */
+nav ul {
+    list-style: none;
+}
+
+/* Alinha os itens da lista em linha */
+nav ul li {
+    display: inline-block;
+}
+
+/* Estilização dos links do menu */
+nav ul li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.7s; /* Transição suave (corrigido de 0.7px para 0.7s) */
+    border-radius: 30px;
+}
+
+/* Efeito ao passar o mouse nos links do menu */
+nav ul li a:hover {
+    background-color: rgba(137, 43, 226, 0.105);
+}
+
+/* Define limites de largura para imagens */
+img {
+    max-width: 579px;
+    min-width: 120px;
+}
+
+/* Estilização de uma div com ID "img" (provavelmente onde a imagem principal está) */
+div#img {
+    text-align: center;
+    background-color: rgb(169, 132, 203);
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Estilização do rodapé */
+footer {
+    margin-top: 20px;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(169, 132, 203);
+    border-top: 40px solid transparent; /* Corrigido: era apenas "border-top: 40px;" */
+    width: 100%;
+}

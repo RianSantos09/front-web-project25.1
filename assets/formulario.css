@@ -1,7 +1,8 @@
 /* Estilização geral do corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif; /* Define fontes preferenciais */
-    background-image: linear-gradient(to left, rgb(114, 112, 116), rgb(114, 114, 114)); /* Degradê de fundo da esquerda para a direita */
+    background-image: linear-gradient(to left, rgb(169, 132, 203), rgb(141, 92, 186)); /* Degradê de fundo da esquerda para a direita */
+    background-color: rgb(169, 132, 203);
 }
 
 /* Container principal do formulário */
@@ -10,7 +11,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centraliza o elemento no meio da tela */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    background-color: rgba(0, 0, 0, 0.416); /* Fundo preto semi-transparente */
     padding: 15px;
     border-radius: 15px;
     width: 20%; /* Largura do formulário */
@@ -27,13 +28,13 @@ legend {
     border: 1px solid rgb(89, 88, 88);
     padding: 10px;
     text-align: center;
-    background-color: rgb(89, 88, 88); /* Cor de fundo */
+    background-color: rgb(169, 132, 203); /* Cor de fundo */
     border-radius: 6px;
 }
 
 /*classe de botoes*/
 .butao{
-    background-color: rgb(89, 88, 88); /* Cor padrão do botão */
+    background-color:rgb(169, 132, 203); /* Cor padrão do botão */
     padding: 15px;
     width: 90%;
     margin-top: 4px;
@@ -81,7 +82,7 @@ legend {
 
 /* Botão de envio */
 #submit {
-    background-color: rgb(89, 88, 88); /* Cor padrão do botão */
+    background-color: rgb(169, 132, 203);; /* Cor padrão do botão */
     padding: 15px;
     width: 100%;
     border: none;
