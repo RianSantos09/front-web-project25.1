@@ -1,38 +1,45 @@
-/*cc desicado a pagina atividade-3.html*/
+/* CSS dedicado à página atividade-3.html */
 
-#img-dinamica{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.136);
-    border-radius: 18px;
-}
-
-#video-ospedado{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.275); 
-    margin-top: 20px;
-    border-radius: 18px;
-    padding: 10px;
-    padding-bottom: 5px;
-}
-#video-local{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.275); 
-    margin-top: 20px;
-    border-radius: 18px;
-    padding: 10px;
-    padding-bottom: 5px;
-    height: 50%;
+/* Estiliza o container da imagem dinâmica */
+#img-dinamica {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: rgba(0, 0, 0, 0.136); /* Fundo preto semitransparente */
+    border-radius: 18px; /* Bordas arredondadas */
 }
 
-#table{
-    background-color: rgba(0, 0, 0, 0.275); 
-    margin-top: 20px;
-    border-radius: 18px;
-    padding: 10px;
-    padding-bottom: 5px;
-    height: 50%;
+/* Estiliza a seção do vídeo hospedado externamente (ex: YouTube) */
+#video-ospedado {
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: rgba(0, 0, 0, 0.275); /* Fundo preto mais visível */
+    margin-top: 20px; /* Espaçamento superior */
+    border-radius: 18px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    padding-bottom: 5px; /* Menor espaçamento na parte inferior */
 }
-iframe{
-    border-radius: 10px;
-    border-color: black;
+
+/* Estiliza a seção do vídeo hospedado localmente */
+#video-local {
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: rgba(0, 0, 0, 0.275); /* Fundo preto mais visível */
+    margin-top: 20px; /* Espaçamento superior */
+    border-radius: 18px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    padding-bottom: 5px; /* Espaçamento inferior reduzido */
+    height: 50%; /* Altura proporcional definida */
+}
+
+/* Estiliza a seção da tabela */
+#table {
+    background-color: rgba(0, 0, 0, 0.275); /* Fundo preto translúcido */
+    margin-top: 20px; /* Espaçamento superior */
+    border-radius: 18px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    padding-bottom: 5px; /* Menor espaçamento na base */
+    height: 50%; /* Altura proporcional */
+}
+
+/* Estiliza todos os iframes da página */
+iframe {
+    border-radius: 10px; /* Bordas arredondadas no iframe */
+    border-color: black; /* Cor da borda preta (não afeta sem border-style) */
 }
