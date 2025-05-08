@@ -1,0 +1,29 @@
+/* CSS dedicado à página 5 */
+
+/* Estilo para o elemento com ID 'cor' */
+#cor {
+    background-color: red;           /* Define a cor de fundo como vermelho */
+    text-align: center;              /* Centraliza o texto horizontalmente */
+    margin-left: 30%;                /* Define uma margem esquerda de 30% da largura da tela */
+    margin-right: 30%;               /* Define uma margem direita de 30% da largura da tela */
+    font-size: larger;               /* Aumenta o tamanho da fonte em relação ao padrão */
+    padding-bottom: 40px;            /* Espaço interno abaixo do conteúdo: 40px */
+    padding-top: 40px;               /* Espaço interno acima do conteúdo: 40px */
+}
+
+/* Estilo para o elemento com ID 'imagi' */
+#imagi {
+    background-image: url("img/logo-xp256px.png");  /* Define a imagem de fundo */
+    text-align: center;                             /* (Não afeta a imagem de fundo, mas centraliza o conteúdo interno, se houver) */
+    background-position: center;                    /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat;                   /* Evita que a imagem se repita */
+    width: 256px;                                   /* Largura fixa do elemento */
+    margin-top: 20px;                               /* Espaço acima do elemento: 20px */
+}
+
+/* Estilo para o elemento button'*/
+button {
+    text-align: center; /* Centraliza o texto dentro do botão */
+    background-color: rgba(255, 0, 0, 0.214);    /* Define uma cor de fundo vermelha translúcida (21,4% de opacidade) */
+    padding: 5px;/* Adiciona um espaçamento interno (padding) de 5px em todos os lados */
+}
