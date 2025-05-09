@@ -2,7 +2,7 @@
 
 /* Estilo para o elemento com ID 'cor' */
 #cor {
-    background-color: red;           /* Define a cor de fundo como vermelho */
+    background-color: rgb(255, 0, 0);           /* Define a cor de fundo como vermelho */
     text-align: center;              /* Centraliza o texto horizontalmente */
     margin-left: 30%;                /* Define uma margem esquerda de 30% da largura da tela */
     margin-right: 30%;               /* Define uma margem direita de 30% da largura da tela */
@@ -21,9 +21,23 @@
     margin-top: 20px;                               /* Espaço acima do elemento: 20px */
 }
 
+
+/*#f70304 vermelho*/
+/*#cb0173 rosa */
+/*#7208ab roxo */
+
+#palheta{
+/* De cima para baixo */
+background: linear-gradient(to bottom, #f70304 0%, #cb0173 50%, #7208ab 100%, #f70304 0%);
+margin-left: 20px;
+margin-right: 20px;
+border-radius:4px;
+}
+
 /* Estilo para o elemento button'*/
 button {
     text-align: center; /* Centraliza o texto dentro do botão */
     background-color: rgba(255, 0, 0, 0.214);    /* Define uma cor de fundo vermelha translúcida (21,4% de opacidade) */
     padding: 5px;/* Adiciona um espaçamento interno (padding) de 5px em todos os lados */
 }
+

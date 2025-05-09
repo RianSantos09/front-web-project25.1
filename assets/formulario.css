@@ -1,8 +1,8 @@
 /* Estilização geral do corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif; /* Define fontes preferenciais */
-    background-image: linear-gradient(to left, rgb(169, 132, 203), rgb(141, 92, 186)); /* Degradê de fundo da esquerda para a direita */
-    background-color: rgb(169, 132, 203);
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.432), rgb(141, 92, 186)); /* Degradê de fundo da esquerda para a direita */
+    background-color: rgba(255, 0, 0, 0.432);
 }
 
 /* Container principal do formulário */
