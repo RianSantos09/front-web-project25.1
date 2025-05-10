@@ -1,4 +1,4 @@
-/*css dedicado a pagina principal, main.html */
+/* CSS dedicado à página principal, main.html */
 
 /* Resetando margens, preenchimentos e definindo box-sizing para todos os elementos */
 * {
@@ -7,65 +7,60 @@
     box-sizing: border-box;
 }
 
-/* Estilização do menu principal */
-.menu {
-    background-color:  rgba(255, 0, 0, 0.432); /* Cor de fundo translúcida */
+/* Estilização da navegação principal */
+nav {
+    background-color: rgba(255, 0, 0, 0.432); /* Cor de fundo translúcida */
     width: 100%;
     padding: 0 30px;
     margin-bottom: 10px;
+    display: flex; /* Layout em linha para conteúdo dentro da nav */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-between; /* Espaço entre a logo e os links */
 }
 
-/* Estilização da navegação */
-nav {
-    display: flex; /* Utiliza flexbox para layout em linha */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    justify-content: space-between; /* Espaço entre os elementos (logo e menu) */
-}
-
-/* Estilização da logo dentro do nav */
-nav .logo > img {
+/* Estilização da logo usando a tag <figure> */
+figure.logo > img {
     width: 170px;
     margin-left: 40px;
 }
 
-/* Remove marcadores da lista do menu */
+/* Estilização da lista de navegação */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
 }
 
-/* Alinha os itens da lista em linha */
+/* Itens da lista dispostos em linha */
 nav ul li {
     display: inline-block;
 }
 
-/* Estilização dos links do menu */
+/* Estilização dos links */
 nav ul li a {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 19px;
-    transition: 0.7s; /* Transição suave (corrigido de 0.7px para 0.7s) */
+    transition: 0.7s; /* Transição suave */
     border-radius: 30px;
 }
 
-/* Efeito ao passar o mouse nos links do menu */
+/* Efeito ao passar o mouse nos links */
 nav ul li a:hover {
     background-color: rgba(38, 6, 68, 0.372);
     color: azure;
 }
 
-/* Define limites de largura para imagens */
+/* Limites de largura para todas as imagens */
 img {
     max-width: 579px;
     min-width: 120px;
 }
 
-/* Estilização de uma div com ID "img" (provavelmente onde a imagem principal está) */
-div#img {
+/* Estilização de uma seção de imagem principal (caso seja usada no futuro) */
+section#img {
     text-align: center;
     background-color: rgb(169, 132, 203);
     border-radius: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px;
 }
 
 /* Estilização do rodapé */
@@ -74,6 +69,6 @@ footer {
     color: aliceblue;
     text-align: center;
     background-color: rgb(169, 132, 203);
-    border-top: 40px solid transparent; /* Corrigido: era apenas "border-top: 40px;" */
+    border-top: 40px solid transparent;
     width: 100%;
 }
