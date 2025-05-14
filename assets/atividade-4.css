@@ -1,56 +1,77 @@
-/* Estiliza a seção do vídeo hospedado externamente (ex: YouTube) */
+/* ================================================== */
+/* ESTILIZAÇÃO DA SEÇÃO DE VÍDEO HOSPEDADO EXTERNAMENTE */
+/* ================================================== */
+
+/* Container principal do vídeo hospedado (ex: YouTube) */
 #video-ospedado {
-    margin-left: 20%;/*largua da borda esquerda*/
-    margin-right: 20%;/*largua da borda direita*/
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: rgba(255, 0, 0, 0.432); /* Fundo preto mais visível */
-    margin-top: 20px; /* Espaçamento superior */
-    border-radius: 18px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    padding-bottom: 5px; /* Menor espaçamento na parte inferior */
+    border-radius: 20px;               /* Bordas arredondadas */
+    background-color: rgb(121, 50, 50);/* Cor de fundo vermelho escuro */
+    padding: 20px;                     /* Espaçamento interno geral */
+    padding-bottom: 50%;               /* Mantém proporção 16:9 (ajustável) */
+    position: relative;                /* Permite posicionamento absoluto interno */
+    margin-bottom: 20px;               /* Espaço abaixo do elemento */
 }
 
-/* Estiliza a seção do vídeo hospedado localmente */
+/* Estilização do iframe dentro do container */
+#video-ospedado > iframe {
+    position: absolute;  /* Posicionamento absoluto em relação ao container */
+    top: 5%;             /* Distância do topo */
+    left: 5%;            /* Distância da esquerda */
+    width: 90%;          /* Largura do vídeo */
+    height: 90%;         /* Altura do vídeo */
+}
+
+/* ================================================== */
+/* ESTILIZAÇÃO DA SEÇÃO DE VÍDEO HOSPEDADO LOCALMENTE */
+/* ================================================== */
+
+/* Container do vídeo local */
 #video-local {
-    margin-left: 20%;/*largua da borda esquerda*/
-    margin-right: 20%;/*largua da borda direita*/
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: rgba(255, 0, 0, 0.432); /* Fundo preto mais visível */
-    margin-top: 20px; /* Espaçamento superior */
-    border-radius: 18px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    padding-bottom: 5px; /* Espaçamento inferior reduzido */
-    height: 50%; /* Altura proporcional definida */
+    border-radius: 20px;                   /* Bordas arredondadas */
+    background-color: rgba(255, 0, 0, 0.769); /* Fundo vermelho translúcido */
+    padding: 20px;                        /* Espaçamento interno */
+    padding-bottom: 50%;                   /* Proporção do container */
+    position: relative;                    /* Referência para posicionamento */
+    text-align: center;                    /* Centraliza conteúdo */
 }
 
-#video-local > iframe{
-
-    position:absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height:90% ;
+/* Estilização do elemento de vídeo */
+#video-local > video {
+    position: absolute;  /* Posicionamento absoluto */
+    top: 5%;             /* Alinhamento vertical */
+    left: 5%;            /* Alinhamento horizontal */
+    width: 90%;          /* Largura do vídeo */
+    height: 90%;         /* Altura do vídeo */
 }
 
+/* ================================================== */
+/* ESTILIZAÇÃO DA SEÇÃO DE TABELA */
+/* ================================================== */
 
-/* Estiliza a seção da tabela */
 #table {
-    background-color:  rgba(255, 0, 0, 0.432); /* Fundo translúcido */
-    margin-top: 20px; /* Espaçamento superior */
-    border-radius: 18px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    padding-bottom: 5px; /* Menor espaçamento na base */
-    height: 330%; /* Altura proporcional */
-    margin-left: 20%;/*largua da borda esquerda*/
-    margin-right: 20%;/*largua da borda direita*/
-}
-/* Estiliza a seção de audio */
-#audio{
-    text-align: center;/* deixa o audio no centro da div */
+    background-color: rgba(255, 0, 0, 0.432); /* Fundo vermelho claro */
+    margin-top: 20px;       /* Espaço acima da tabela */
+    border-radius: 18px;    /* Bordas arredondadas */
+    padding: 10px;          /* Espaçamento interno */
+    padding-bottom: 5px;    /* Espaço inferior reduzido */
+    height: 330%;           /* Altura (ajustar conforme necessidade) */
+    margin-left: 20%;       /* Margem esquerda */
+    margin-right: 20%;      /* Margem direita */
 }
 
-/* Estiliza todos os iframes da página */
+/* ================================================== */
+/* ESTILIZAÇÃO DA SEÇÃO DE ÁUDIO */
+/* ================================================== */
+
+#audio {
+    text-align: center; /* Centraliza o player de áudio */
+}
+
+/* ================================================== */
+/* ESTILOS GLOBAIS PARA IFRAMES */
+/* ================================================== */
+
 iframe {
-    border-radius: 10px; /* Bordas arredondadas no iframe */
-    border-color: black; /* Cor da borda preta (não afeta sem border-style) */
+    border-radius: 10px;    /* Bordas arredondadas */
+    border-color: black;    /* Cor da borda (requer border-style para efeito) */
 }

@@ -9,68 +9,78 @@
 </head>
 <body>
     
-     <a href="atividade-3.html"><h1>VOLTAR</h1> </a>
+    <!-- Corpo do documento - conteúdo visível da página -->
+    
+    <!-- Link de navegação para voltar à página anterior -->
+    <a href="atividade-3.html"><h1>VOLTAR</h1></a>
    
-    <center>  <p>VIDEO OSPEDADO</p> </center>
-    <!--adicionando video ospedado-->
-    <div id="video-ospedado">
-    <!--tag de incorporação do youtube-->    
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dtr0Mb5VZgI?si=KmL84hXIREju6wfC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Seção 1: Vídeo hospedado externamente (YouTube) -->
+    <center><p>VIDEO OSPEDADO</p></center> <!-- Título da seção (centralizado) -->
+    <div id="video-ospedado"> <!-- Container do vídeo com ID para estilização CSS -->
+        <!-- Player de vídeo incorporado do YouTube -->
+        <iframe src="https://www.youtube.com/embed/Dtr0Mb5VZgI?si=KmL84hXIREju6wfC" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
     </div>
-    <center>  <p>VIDEO LOCAL</p> </center>
-    <!--adicionando video ospedado-->
-    <div id="video-local">
-    <!--adicionando video local-->   
-    <!--DIFERENTES FORMATOS DE ARQUIVOS-->   
-    <video width="400" controls>
-    <source src="/assets/videos/videolocal.webm" type="video/webm">
-    <source src="/assets/videos/videolocal.mp4" type="video/mp4">
-    <source src="/assets/videos/videolocal.ogv" type="video/ogg">
-    <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
-    </video>
-        
+
+    <!-- Seção 2: Vídeo hospedado localmente -->
+    <center><p>VIDEO LOCAL</p></center> <!-- Título da seção -->
+    <div id="video-local"> <!-- Container do vídeo local -->
+        <!-- Elemento de vídeo HTML5 com múltiplos formatos para compatibilidade -->
+        <video controls> <!-- Atributo controls exibe os controles padrão do player -->
+            <!-- Fontes do vídeo em diferentes formatos (o navegador usará o primeiro compatível) -->
+            <source src="/assets/videos/videolocal.webm" type="video/webm">
+            <source src="/assets/videos/videolocal.mp4" type="video/mp4">
+            <source src="/assets/videos/videolocal.ogv" type="video/ogg">
+            <!-- Mensagem de fallback caso o navegador não suporte vídeo HTML5 -->
+            <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+        </video>
     </div>
-    <center><p>AUDIO</p> </center>
-    <!--adicionando audio-->   
-    <!--DIFERENTES FORMATOS DE ARQUIVOS-->   
-    <div id="audio" aria-controls ="audio">
-        <audio preload="metadata" controls >
-        <source src="/assets/audio/audio.mp3" type="audio/mpeg">
-        <source src="/assets/audio/audio.ogg" type="audio/ogg">
-        <source src="/assets/audio/audio.wav" type="image/wav">
-        <p>Seu navegador não suporta áudio 
-    </p>
-</audio>
+
+    <!-- Seção 3: Áudio -->
+    <center><p>AUDIO</p></center> <!-- Título da seção -->
+    <div id="audio"> <!-- Container do áudio -->
+        <!-- Elemento de áudio HTML5 com múltiplos formatos -->
+        <audio preload="metadata" controls> <!-- preload="metadata" carrega apenas informações básicas inicialmente -->
+            <!-- Fontes do áudio em diferentes formatos -->
+            <source src="/assets/audio/audio.mp3" type="audio/mpeg">
+            <source src="/assets/audio/audio.ogg" type="audio/ogg">
+            <source src="/assets/audio/audio.wav" type="audio/wav"> <!-- Correção: type deveria ser "audio/wav" -->
+            <!-- Mensagem de fallback -->
+            <p>Seu navegador não suporta áudio</p>
+        </audio>
     </div>
-    <!--adicionando tabela-->    
-    <div id="table" style="text-align: center;">
-        <table border="1" style="margin: 0 auto;">
-        <tr>
-            <!--cabeçalho-->
-            <th>Coluna 1</th>
-            <th>Coluna 2</th>
-            <th>Coluna 3</th>
-        </tr>
-        <tr>
-            <!--coluna 1-->
-            <td>Valor 1A</td>
-            <td>Valor 1B</td>
-            <td>Valor 1C</td>
-        </tr>
-        <tr>
-            <!--coluna 2-->
-            <td>Valor 2A</td>
-            <td>Valor 2B</td>
-            <td>Valor 2C</td>
-        </tr>
-        <tr>
-            <!--coluna 3-->
-            <td>Valor 3A</td>
-            <td>Valor 3B</td>
-            <td>Valor 3C</td>
-        </tr>
+
+    <!-- Seção 4: Tabela -->
+    <div id="table"> <!-- Container da tabela -->
+        <!-- Tabela HTML com borda visível -->
+        <table border="1"> <!-- Atributo border define a espessura da borda -->
+            <!-- Linha de cabeçalho da tabela -->
+            <tr>
+                <th>Coluna 1</th> <!-- Células de cabeçalho (th) -->
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <!-- Linhas de dados da tabela -->
+            <tr>
+                <td>Valor 1A</td> <!-- Células de dados (td) -->
+                <td>Valor 1B</td>
+                <td>Valor 1C</td>
+            </tr>
+            <tr>
+                <td>Valor 2A</td>
+                <td>Valor 2B</td>
+                <td>Valor 2C</td>
+            </tr>
+            <tr>
+                <td>Valor 3A</td>
+                <td>Valor 3B</td>
+                <td>Valor 3C</td>
+            </tr>
         </table>
-            </div>
-    </main>   
+    </div>
 </body>
 </html>
