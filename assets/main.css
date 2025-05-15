@@ -7,47 +7,61 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex; /* Define o body como container flexível */
+    margin: 3px; /* Margem externa de 3px */
+    flex: 1 1 100vw; /* O body pode crescer, encolher e tem base de 100% da largura da viewport */
+    flex-wrap:wrap ; /* Permite quebra de linha entre os elementos filhos */
+}
+/* Estilo do cabeçalho */
+header{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw; /* Ocupa toda a largura da tela */
+   background-color: rgba(216, 5, 5, 0.675);
+    height: 100px; /* Altura fixa de 100px */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+   justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo da área principal do conteúdo */
+main{
+    display: flex;
+    margin: 3px;
+    flex: 20 1 500px; /* Crescimento maior (20), encolhimento normal, base de 500px */
+    background-color: rgba(216, 5, 5, 0.675);
+    height: calc(100vh - 330px); /* Altura baseada na altura da viewport menos os outros elementos */
+}
+
 /* Estilização da navegação principal */
 nav {
-    background-color: rgba(255, 0, 0, 0.432); /* Cor de fundo translúcida */
-    width: 100%;
-    padding: 0 30px;
-    margin-bottom: 10px;
-    display: flex; /* Layout em linha para conteúdo dentro da nav */
-    align-items: center; /* Alinhamento vertical */
-    justify-content: space-between; /* Espaço entre a logo e os links */
+   display: flex;
+   margin: 3px;
+   flex: 1 1 100vw; /* Ocupa toda a largura da tela */
+   height: 100px; /* Altura fixa de 100px */
+   background-color: rgba(216, 5, 5, 0.675);
+   align-items: center; /* Alinha os itens verticalmente ao centro */
+   justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
-/* Estilização da logo usando a tag <figure> */
-figure.logo > img {
-    width: 170px;
-    margin-left: 40px;
-}
-
-/* Estilização da lista de navegação */
-nav ul {
-    list-style: none; /* Remove marcadores */
-}
-
-/* Itens da lista dispostos em linha */
-nav ul li {
-    display: inline-block;
-}
 
 /* Estilização dos links */
-nav ul li a {
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 19px;
-    transition: 0.7s; /* Transição suave */
-    border-radius: 30px;
+nav  a {
+    margin: 5%; /* Margem de 5% ao redor de cada link */
+    font-size: 20pt; /* Tamanho da fonte dos links */
+}
+
+a{
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: inherit; /* Herda a cor do elemento pai */
 }
 
 /* Efeito ao passar o mouse nos links */
-nav ul li a:hover {
+nav a:hover {
     background-color: rgba(38, 6, 68, 0.372);
     color: azure;
 }
+
 
 /* Limites de largura para todas as imagens */
 img {
@@ -55,20 +69,34 @@ img {
     min-width: 120px;
 }
 
-/* Estilização de uma seção de imagem principal (caso seja usada no futuro) */
-section#img {
-    text-align: center;
-    background-color: rgb(169, 132, 203);
-    border-radius: 30px;
-    margin: 0 40px;
+/* Estilo da barra lateral */
+aside{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 200px; /* Base de 200px, mas pode crescer e encolher */
+   background-color: rgba(216, 5, 5, 0.675);
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+   justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
-/* Estilização do rodapé */
-footer {
-    margin-top: 20px;
-    color: aliceblue;
-    text-align: center;
-    background-color: rgb(169, 132, 203);
-    border-top: 40px solid transparent;
-    width: 100%;
+/* Estilo do rodapé */
+footer{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw; /* Ocupa toda a largura da tela */
+    background-color: rgba(216, 5, 5, 0.675);
+    height: 100px; /* Altura fixa de 100px */
+}
+
+/* Media query para telas com largura máxima de 923px */
+@media only screen and (max-width: 923px) {
+    /* Estilos aplicados para dispositivos menores */
+    main {
+        height: calc(100vh - 436px); /* Ajusta altura do main para levar em conta altura extra de nav e aside */
+    }
+
+    aside {
+        flex: 1 1 100vw; /* O aside ocupa toda a largura da tela */
+        height: 100px; /* Altura fixa */
+    }
 }
