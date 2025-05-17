@@ -1,3 +1,4 @@
+
 /* ================================================== */
 /* ESTILIZAÇÃO DA SEÇÃO DE VÍDEO HOSPEDADO EXTERNAMENTE */
 /* ================================================== */
@@ -54,9 +55,14 @@
     border-radius: 18px;    /* Bordas arredondadas */
     padding: 10px;          /* Espaçamento interno */
     padding-bottom: 5px;    /* Espaço inferior reduzido */
-    height: 330%;           /* Altura (ajustar conforme necessidade) */
-    margin-left: 20%;       /* Margem esquerda */
-    margin-right: 20%;      /* Margem direita */
+    height: 100%;           /* Altura (ajustar conforme necessidade) */
+    text-align: center;/* Centraliza texto */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+#tabela {
+margin-right: 35%; /* espaço entre a div e a borada direita */
+margin-left: 40%; /* espaço entre a div e a borada esquerda */
 }
 
 /* ================================================== */
@@ -74,4 +80,8 @@
 iframe {
     border-radius: 10px;    /* Bordas arredondadas */
     border-color: black;    /* Cor da borda (requer border-style para efeito) */
+}
+
+.center{
+    text-align: center; /* Centraliza texto */
 }
