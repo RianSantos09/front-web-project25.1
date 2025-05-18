@@ -88,7 +88,7 @@ footer{
     height: 100px; /* Altura fixa de 100px */
 }
 
-/* Media query para telas com largura máxima de 923px */
+/* adicionando Media query para telas com largura máxima de 923px */
 @media only screen and (max-width: 923px) {
     /* Estilos aplicados para dispositivos menores */
     main {
