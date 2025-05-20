@@ -1,102 +1,54 @@
-/* CSS dedicado à página principal, main.html */
-
-/* Resetando margens, preenchimentos e definindo box-sizing para todos os elementos */
-* {
+/* Reset de estilos padrão para garantir consistência entre navegadores */
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
 }
 
+/* Estilo do corpo da página */
 body{
-    display: flex; /* Define o body como container flexível */
+    display: flex; /* Define o body como um container flexível */
     margin: 3px; /* Margem externa de 3px */
-    flex: 1 1 100vw; /* O body pode crescer, encolher e tem base de 100% da largura da viewport */
-    flex-wrap:wrap ; /* Permite quebra de linha entre os elementos filhos */
+    flex: 1 1 100vw; /* Flex-grow: 1, flex-shrink: 1, base de 100% da largura da viewport */
+    flex-wrap:wrap ; /* Permite que os elementos filhos quebrem para a próxima linha */
 }
+
 /* Estilo do cabeçalho */
 header{
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw; /* Ocupa toda a largura da tela */
-   background-color: rgba(216, 5, 5, 0.675);
-    height: 100px; /* Altura fixa de 100px */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-   justify-content: center; /* Centraliza os itens horizontalmente */
+    display: flex; /* Define como container flexível */
+    margin: 3px; /* Margem externa de 3px */
+    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
+    background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
+}
+
+/* Estilo da barra de navegação */
+nav{
+   display: flex; /* Define como container flexível */
+   margin: 3px;
+   flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
+   background-color: rgb(135, 5, 5);
 }
 
 /* Estilo da área principal do conteúdo */
 main{
-    display: flex;
+    display: flex; /* Define como container flexível */
     margin: 3px;
-    flex: 20 1 500px; /* Crescimento maior (20), encolhimento normal, base de 500px */
-    background-color: rgba(216, 5, 5, 0.675);
-    height: calc(100vh - 330px); /* Altura baseada na altura da viewport menos os outros elementos */
-}
-
-/* Estilização da navegação principal */
-nav {
-   display: flex;
-   margin: 3px;
-   flex: 1 1 100vw; /* Ocupa toda a largura da tela */
-   height: 100px; /* Altura fixa de 100px */
-   background-color: rgba(216, 5, 5, 0.675);
-   align-items: center; /* Alinha os itens verticalmente ao centro */
-   justify-content: center; /* Centraliza os itens horizontalmente */
-}
-
-
-/* Estilização dos links */
-nav  a {
-    margin: 5%; /* Margem de 5% ao redor de cada link */
-    font-size: 20pt; /* Tamanho da fonte dos links */
-}
-
-a{
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: inherit; /* Herda a cor do elemento pai */
-}
-
-/* Efeito ao passar o mouse nos links */
-nav a:hover {
-    background-color: rgba(38, 6, 68, 0.372);
-    color: azure;
-}
-
-
-/* Limites de largura para todas as imagens */
-img {
-    max-width: 579px;
-    min-width: 120px;
+    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
+    background-color: rgb(135, 5, 5);
 }
 
 /* Estilo da barra lateral */
 aside{
-    display: flex;
+    display: flex; /* Define como container flexível */
     margin: 3px;
-    flex: 1 1 200px; /* Base de 200px, mas pode crescer e encolher */
-   background-color: rgba(216, 5, 5, 0.675);
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-   justify-content: center; /* Centraliza os itens horizontalmente */
+    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
+    background-color: rgb(135, 5, 5);
 }
 
 /* Estilo do rodapé */
 footer{
-    display: flex;
+    display: flex; /* Define como container flexível */
     margin: 3px;
-    flex: 1 1 100vw; /* Ocupa toda a largura da tela */
-    background-color: rgba(216, 5, 5, 0.675);
-    height: 100px; /* Altura fixa de 100px */
-}
-
-/* adicionando Media query para telas com largura máxima de 923px */
-@media only screen and (max-width: 923px) {
-    /* Estilos aplicados para dispositivos menores */
-    main {
-        height: calc(100vh - 436px); /* Ajusta altura do main para levar em conta altura extra de nav e aside */
-    }
-
-    aside {
-        flex: 1 1 100vw; /* O aside ocupa toda a largura da tela */
-        height: 100px; /* Altura fixa */
-    }
+    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
+    background-color: rgb(135, 5, 5);
 }
