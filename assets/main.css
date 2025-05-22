@@ -116,7 +116,7 @@ aside{
 
 .slider-whey{
     display: flex;
-    width: 60%;
+    width: 40%;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -159,6 +159,12 @@ aside{
     width: 100%;
     height: 100%;
 }
+
+#prevbutton img:hover, #next-button img:hover{
+    width: 103%;
+    height: 103%;
+}
+
 
 #prevbutton{
     transform: rotate(180deg);
