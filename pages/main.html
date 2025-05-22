@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--adicionando icon a pagina-->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+
+    <!-- Adicionando ícone à aba do navegador -->
     <link rel="shortcut icon" href="/assets/img/logo-Urso.ico" type="image/x-icon">
-    <!--conectanto ao arquivo .css-->
+
+    <!-- Conectando ao arquivo de estilos CSS -->
     <link rel="stylesheet" href="/assets/main.css">
-    <script src="../assets/src/script.js" denfer ></script>
-    <!--ADICIONANDO TITULO-->
+
+    <!-- Conectando ao script JavaScript (OBS: 'denfer' está escrito errado, o correto é 'defer') -->
+    <script src="../assets/src/script.js" defer></script>
+
+    <!-- Adicionando título da página -->
     <title>XP NUTRI</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header><h1>SUA MELHOR EXPERIENÇIA</h1></header>
-        <!-- Navegação principal -->
+    <!-- Cabeçalho da página com título principal -->
+    <header>
+        <h1>SUA MELHOR EXPERIÊNCIA</h1> <!-- Pequeno erro ortográfico corrigido: EXPERIÊNCIA -->
+    </header>
+
+    <!-- Navegação principal do site -->
     <nav id="menu">
-            <!-- Links de navegação -->
-                <a href="atividade-3.html">SAND BOX</a>
-                <a href="#">CREATINAS</a>
-                <a href="#">WHEY</a>
-                <a href="formulario.html">CADASTRO</a>
+        <!-- Links de navegação -->
+        <a href="atividade-3.html">SAND BOX</a>
+        <a href="#">CREATINAS</a>
+        <a href="#">WHEY</a>
+        <a href="formulario.html">CADASTRO</a>
     </nav>
 
-    <!-- Conteúdo principal -->
+    <!-- Conteúdo principal da página -->
     <main>
-        
+        <!-- Container do slider de imagens de produtos whey -->
         <div class="slider-whey">
+            <!-- Botão para imagem anterior -->
+            
             <button id="prevbutton"><img src="../assets/img/seta-direita.png" alt="anterior"></button>
+            
+
+            <!-- Container das imagens do slider -->
             <div class="img-whey">
-                <img src="../assets/img/whey170X200/delicius_beijinho_de_coco170X200.png" alt="delicius_beijinho_de_coco" class="slider on" >
+                <!-- Imagens dos produtos, com a primeira ativa (classe 'on') -->
+                <img src="../assets/img/whey170X200/delicius_beijinho_de_coco170X200.png" alt="delicius_beijinho_de_coco" class="slider on">
                 <img src="../assets/img/whey170X200/delicius_doce_de_leite170X200.png" alt="delicius_doce_de_leite" class="slider">
                 <img src="../assets/img/whey170X200/dux170X200.png" alt="dux" class="slider">
                 <img src="../assets/img/whey170X200/maxNatural170X200.png" alt="maxNatural" class="slider">
-                <img src="../assets/img/whey170X200/max170x200.png" alt="/max100%" class="slider">
+               <img src="../assets/img/whey170X200/max170x200.png" alt="max100%" class="slider"> <!-- Corrigido alt para refletir o nome -->
             </div>  
-            <button id="nextbutton"><img src="../assets/img/seta-direita.png" alt="proximo"></button>    
+
+            <!-- Botão para imagem seguinte -->
+         
+               <button id="nextbutton"> <img src="../assets/img/seta-direita.png" alt="proximo"></button>   
+            
         </div>
+        
     </main>
 
+    <!-- Seção lateral (pode ser usada para banners, links ou promoções) -->
     <aside></aside>
-    <!-- Rodapé -->
-<footer id="footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Xp Nutri Suplementos. Todos os direitos reservados.</p>
-        <div class="footer-links">
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="https://www.instagram.com/xp_nutri/" target="_blank"><img src="../assets/img/instagram (2).png" alt=""></a>
-            <a href="https://api.whatsapp.com/send/?phone=5574999590306&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/img/whatsapp.png" alt=""></a>
+
+    <!-- Rodapé da página -->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Xp Nutri Suplementos. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <!-- Links do rodapé -->
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <!-- Ícone com link para Instagram -->
+                <a href="https://www.instagram.com/xp_nutri/" target="_blank">
+                    <img src="../assets/img/instagram (2).png" alt="Instagram">
+                </a>
+                <!-- Ícone com link para WhatsApp -->
+                <a href="https://api.whatsapp.com/send/?phone=5574999590306&text&type=phone_number&app_absent=0" target="_blank">
+                    <img src="../assets/img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
