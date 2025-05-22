@@ -116,14 +116,15 @@ aside {
 /* Estilo do slider de imagens do whey */
 .slider-whey {
     display: flex; /* Container flexível */
-    width: 40%; /* Largura de 40% do pai */
+    width: 30%; /* Largura de 40% do pai */
     min-height: 100vh; /* Altura mínima de 100% da altura da viewport */
     align-items: center; /* Alinha verticalmente */
     justify-content: center; /* Alinha horizontalmente */
     gap: 1rem; /* Espaço entre os elementos */
     background-color: rgb(255, 255, 255); /* Cor de fundo branca */
-    margin-top: 40px; /* Espaço acima */
+    margin-top: 10px; /* Espaço acima */
     margin-bottom: 40px; /* Espaço abaixo */
+    background-color: transparent;
 }
 
 /* Container da imagem */
@@ -145,30 +146,24 @@ aside {
 
 /* Botão anterior */
 #prevbutton {
-    background-color: transparent; /* Fundo transparente */
-    border: none; /* Sem borda */
     transform: rotate(180deg); /* Rotaciona a imagem (usada para seta) */
+    border: none; /* Sem borda */
+    background-color: transparent; /* Fundo transparente */
+    cursor: pointer; /* Cursor de clique */   
 }
 
 /* Botão próximo */
 #nextbutton {
-    width: 30px; /* Largura do botão */
-    height: 30px; /* Altura do botão */
     border: none; /* Sem borda */
     background-color: transparent; /* Fundo transparente */
     cursor: pointer; /* Cursor de clique */
 }
 
+
 /* Estilo das imagens dos botões */
-#prevbutton img, #next-button img {
+#prevbutton img, #nextbutton img {
     width: 100%;
     height: 100%;
-}
-
-/* Efeito hover nos botões */
-#prevbutton img:hover, #next-button img:hover {
-    width: 103%; /* Leve aumento no tamanho */
-    height: 103%;
 }
 
 /* Classe para imagem visível no slider */
