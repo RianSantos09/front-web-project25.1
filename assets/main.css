@@ -1,196 +1,195 @@
 /* Reset de estilos padrão para garantir consistência entre navegadores */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
 }
 
 /* Estilo do corpo da página */
-body{
+body {
     display: flex; /* Define o body como um container flexível */
     margin: 3px; /* Margem externa de 3px */
     flex: 1 1 100vw; /* Flex-grow: 1, flex-shrink: 1, base de 100% da largura da viewport */
-    flex-wrap:wrap ; /* Permite que os elementos filhos quebrem para a próxima linha */
+    flex-wrap: wrap; /* Permite que os elementos filhos quebrem para a próxima linha */
+    font-size: 14px; /* Tamanho da fonte padrão para dispositivos móveis */
+    padding: 10px; /* Preenchimento interno */
 }
 
 /* Estilo do cabeçalho */
-header{
+header {
     display: flex; /* Define como container flexível */
     margin: 3px; /* Margem externa de 3px */
     flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
     background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
-    height: 40px;
-    width: 40px;
-    color: #ffffff;
+    height: 40px; /* Altura fixa de 40px */
+    width: 40px; /* Largura fixa de 40px (parece um erro, talvez quisesse 100vw?) */
+    color: #ffffff; /* Cor do texto branco */
     justify-content: center;  /* Alinha horizontalmente */
     align-items: center;      /* Alinha verticalmente */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte personalizada */
 }
 
 /* Estilo da barra de navegação */
 /* Menu container */
 #menu {
-    border: none;
-    display: flex;
+    border: none; /* Remove borda padrão */
+    display: flex; /* Define como container flexível */
     justify-content: center; /* Centraliza os itens */
-    align-items: center;
+    align-items: center; /* Alinha verticalmente */
     gap: 30px; /* Espaço entre os links */
-    padding: 16px 0;
-    background-color: #ffffff; /* Vermelho escuro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px 0; /* Espaçamento vertical */
+    background-color: #ffffff; /* Cor de fundo branca */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte personalizada */
 }
 
 /* Estilo dos links */
 #menu a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s;
+    color: #000000; /* Cor do texto preta */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 8px 12px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.2s; /* Suaviza transições */
 }
 
 /* Efeito hover */
 #menu a:hover {
-    background-color: #b22222; /* Vermelho mais claro */
-    transform: scale(1.05);
+    background-color: #b22222; /* Vermelho mais claro no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
 }
 
 /* Estilo da área principal do conteúdo */
-main{
+main {
     display: flex; /* Define como container flexível */
-    margin: 3px;
+    margin: 3px; /* Margem externa */
     flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+    background-color: white; /* Cor de fundo branca */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
 }
 
 /* Estilo da barra lateral */
-aside{
+aside {
     display: flex; /* Define como container flexível */
-    margin: 3px;
+    margin: 3px; /* Margem externa */
     flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
-    background-color: rgb(135, 5, 5);
+    background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
 }
 
 /* Estilo do rodapé */
 /* Footer */
 #footer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto branca */
+    padding: 30px 20px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Espaço acima do rodapé */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte personalizada */
+    width: 100%; /* Largura total */
 }
 
 .footer-content {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .footer-links {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    margin-top: 15px; /* Espaço acima dos links */
+    display: flex; /* Container flexível */
+    justify-content: center; /* Centraliza os links */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaço entre os links */
 }
 
 .footer-links a {
-    color: #bbbbbb;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
+    color: #bbbbbb; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: color 0.3s; /* Suaviza transição de cor */
 }
 
 .footer-links a:hover {
-    color: #ffffff;
-   
+    color: #ffffff; /* Cor branca no hover */
 }
 
-
-
-.slider-whey{
-    display: flex;
-    width: 40%;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background-color: rgb(255, 255, 255);
-    margin-top: 40px;
-    margin-bottom: 40px;
- 
+/* Estilo do slider de imagens do whey */
+.slider-whey {
+    display: flex; /* Container flexível */
+    width: 40%; /* Largura de 40% do pai */
+    min-height: 100vh; /* Altura mínima de 100% da altura da viewport */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    gap: 1rem; /* Espaço entre os elementos */
+    background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+    margin-top: 40px; /* Espaço acima */
+    margin-bottom: 40px; /* Espaço abaixo */
 }
 
-.img-whey{
-    position: relative;
+/* Container da imagem */
+.img-whey {
+    position: relative; /* Necessário para posicionar os sliders absolutamente dentro */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 500px; /* Largura fixa */
 }
 
-.slider{
-    opacity: 0;
-    transition: opacity .2s;
-    position: absolute;
-    width: 100%;
+/* Imagens do slider */
+.slider {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity .2s; /* Transição suave */
+    position: absolute; /* Posicionamento absoluto dentro do container */
+    width: 100%; /* Ocupa toda a largura do container */
 }
 
-#prevbutton{
-    background-color: transparent;
-    border: none;
+/* Botão anterior */
+#prevbutton {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    transform: rotate(180deg); /* Rotaciona a imagem (usada para seta) */
 }
 
- #nextbutton{
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+/* Botão próximo */
+#nextbutton {
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    border: none; /* Sem borda */
+    background-color: transparent; /* Fundo transparente */
+    cursor: pointer; /* Cursor de clique */
 }
 
-#prevbutton img, #next-button img{
+/* Estilo das imagens dos botões */
+#prevbutton img, #next-button img {
     width: 100%;
     height: 100%;
 }
 
-#prevbutton img:hover, #next-button img:hover{
-    width: 103%;
+/* Efeito hover nos botões */
+#prevbutton img:hover, #next-button img:hover {
+    width: 103%; /* Leve aumento no tamanho */
     height: 103%;
 }
 
-
-#prevbutton{
-    transform: rotate(180deg);
+/* Classe para imagem visível no slider */
+.on {
+    opacity: 1; /* Torna visível */
 }
 
-.on{
-    opacity: 1;
-}
+/* Estilos responsivos para tamanhos maiores de tela */
 
-/* Estilos para dispositivos móveis (por padrão) */
-body {
-    font-size: 14px;
-    padding: 10px;
-}
-
-/* Estilos para telas maiores (adicionando melhorias para desktops) */
+/* Para telas com largura mínima de 768px (tablets) */
 @media (min-width: 768px) {
     body {
-        font-size: 16px;
-        padding: 20px;
+        font-size: 16px; /* Tamanho da fonte aumentado */
+        padding: 20px; /* Maior preenchimento interno */
     }
 }
 
+/* Para telas com largura mínima de 1024px (desktops) */
 @media (min-width: 1024px) {
     body {
-        font-size: 18px;
-        padding: 40px;
+        font-size: 18px; /* Tamanho ainda maior para desktop */
+        padding: 40px; /* Maior preenchimento */
     }
 }
