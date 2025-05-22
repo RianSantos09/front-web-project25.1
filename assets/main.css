@@ -21,25 +21,40 @@ header{
     background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
     height: 40px;
     width: 40px;
-    text-align: center;
+    color: #ffffff;
+    justify-content: center;  /* Alinha horizontalmente */
+    align-items: center;      /* Alinha verticalmente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Estilo da barra de navegação */
-#menu{
-
-  height: 40px;
-   width: 40px;
-   display: flex; /* Define como container flexível */
-   margin: 3px;
-   flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
-   background-color: rgb(135, 5, 5);
-   text-align: center;
+/* Menu container */
+#menu {
+    border: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    gap: 30px; /* Espaço entre os links */
+    padding: 16px 0;
+    background-color: #ffffff; /* Vermelho escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#menu a{
-    color: aliceblue;
-    padding: 3px;
+/* Estilo dos links */
+#menu a {
+    color: #000000;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito hover */
+#menu a:hover {
+    background-color: #b22222; /* Vermelho mais claro */
+    transform: scale(1.05);
 }
 
 /* Estilo da área principal do conteúdo */
@@ -61,11 +76,40 @@ aside{
 }
 
 /* Estilo do rodapé */
-footer{
-    display: flex; /* Define como container flexível */
-    margin: 3px;
-    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
-    background-color: rgb(135, 5, 5);
+/* Footer */
+#footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+   
 }
 
 
