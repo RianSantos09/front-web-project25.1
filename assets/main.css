@@ -19,14 +19,27 @@ header{
     margin: 3px; /* Margem externa de 3px */
     flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
     background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
+    height: 40px;
+    width: 40px;
+    text-align: center;
 }
 
 /* Estilo da barra de navegação */
-nav{
+#menu{
+
+  height: 40px;
+   width: 40px;
    display: flex; /* Define como container flexível */
    margin: 3px;
    flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
    background-color: rgb(135, 5, 5);
+   text-align: center;
+}
+
+#menu a{
+    color: aliceblue;
+    padding: 3px;
+    text-decoration: none;
 }
 
 /* Estilo da área principal do conteúdo */
@@ -110,3 +123,4 @@ footer{
 .on{
     opacity: 1;
 }
+
