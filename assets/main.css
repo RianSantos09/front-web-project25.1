@@ -124,3 +124,23 @@ footer{
     opacity: 1;
 }
 
+/* Estilos para dispositivos móveis (por padrão) */
+body {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Estilos para telas maiores (adicionando melhorias para desktops) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
