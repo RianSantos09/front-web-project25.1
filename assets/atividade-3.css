@@ -29,3 +29,19 @@ iframe {
     border-radius: 10px; /* Bordas arredondadas no iframe */
     border-color: black; /* Cor da borda preta (não afeta sem border-style) */
 }
+
+#footer {
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto branca */
+    padding: 30px 20px; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Espaço acima do rodapé */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte personalizada */
+    width: 100%; /* Largura total */
+}
+
+.footer-content {
+    max-width: 1000px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
