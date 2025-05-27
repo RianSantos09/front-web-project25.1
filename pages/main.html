@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
-
     <!-- Adicionando título da página -->
     <title>XP NUTRI</title>
 </head>
@@ -24,14 +23,66 @@
     <header>
         <h1>SUA MELHOR EXPERIÊNCIA</h1> <!-- Pequeno erro ortográfico corrigido: EXPERIÊNCIA -->
     </header>
-
+    
     <!-- Navegação principal do site -->
+
     <nav id="menu">
         <!-- Links de navegação -->
-        <a href="atividade-3.html">SAND BOX</a>
-        <a href="#">CREATINAS</a>
-        <a href="#">WHEY</a>
-        <a href="formulario.html">CADASTRO</a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="../pages/atividade-3.html">SAND BOX</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">CADASTRO</a>
+        </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            WHEY
+          </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">OPTIMUM NUTRITION </a></li>
+            <li><a class="dropdown-item" href="#">INTEGRALMÉDICA</a></li>
+            <li><a class="dropdown-item" href="#">DUX NUTRITION</a></li>
+            <li><a class="dropdown-item" href="#">GROWTH SUPPLEMENTS</a></li>
+            <li><a class="dropdown-item" href="#">ATLHETICA NUTRITION</a></li>
+            <li><a class="dropdown-item" href="#">MAX TITANIUM</a></li>
+            <li><a class="dropdown-item" href="#">PROBIÓTICA</a></li>
+            <li><a class="dropdown-item" href="#">BLACK SKULL</a></li>
+            <li><a class="dropdown-item" href="#">UNIVERSAL NUTRITION</a></li>
+            <li><a class="dropdown-item" href="#">DYMATIZE</a></li>
+          </ul>  
+        </li>
+             <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CREATINA
+          </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">MAX</a></li>
+            <li><a class="dropdown-item" href="#">DUX</a></li>
+            <li><a class="dropdown-item" href="#">BLACK SKULL</a></li>
+            <li><a class="dropdown-item" href="#">UNIVERSAL NUTRITION</a></li>
+            <li><a class="dropdown-item" href="#">INTEGRALMÉDICA</a></li>
+            <li><a class="dropdown-item" href="#">PROBIÓTICA</a></li>
+            <li><a class="dropdown-item" href="#">SOLDIERS </a></li>
+            <li><a class="dropdown-item" href="#">ATHLETICA NUTRITION</a></li>
+            <li><a class="dropdown-item" href="#">VITAFOR</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="pesquisar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit"><img src="../assets/img/lupa.png" alt=""></button>
+      </form>
+    </div>
+  </div>
+</nav>
+        
     </nav>
 
     <!-- Conteúdo principal da página -->
@@ -52,7 +103,7 @@
                 <img src="../assets/img/whey170X200/maxNatural170X200.png" alt="maxNatural" class="slider">
                <img src="../assets/img/whey170X200/max170x200.png" alt="max100%" class="slider"> <!-- Corrigido alt para refletir o nome -->
             </div>  
-
+            
             <!-- Botão para imagem seguinte -->
          
                <button id="nextbutton"> <img src="../assets/img/seta-direita.png" alt="proximo"></button>   
