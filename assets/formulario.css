@@ -1,98 +1,15 @@
 /* Estilização geral do corpo da página */
-body {
-    font-family: Arial, Helvetica, sans-serif; /* Define fontes preferenciais */
-    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.432), rgb(141, 92, 186)); /* Degradê de fundo da esquerda para a direita */
-    background-color: rgba(255, 0, 0, 0.432);
-}
 
-/* Container principal do formulário */
-.form {
-    position: absolute; /* Posicionamento absoluto para centralizar */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o elemento no meio da tela */
-    background-color: rgba(0, 0, 0, 0.416); /* Fundo preto semi-transparente */
-    padding: 15px;
-    border-radius: 15px;
-    width: 20%; /* Largura do formulário */
-    color: white;
-}
 
-/* Estilo da borda do fieldset (agrupamento de campos) */
-fieldset {
-    border: 3px solid rgb(89, 88, 88); /* Borda escura */
-}
-
-/* Estilo da legenda (título do fieldset) */
-legend {
-    border: 1px solid rgb(89, 88, 88);
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(169, 132, 203); /* Cor de fundo */
-    border-radius: 6px;
-}
-
-/*classe de botoes*/
-.butao{
-    background-color:rgb(169, 132, 203); /* Cor padrão do botão */
-    padding: 15px;
-    width: 90%;
-    margin-top: 4px;
-    border: none;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 15px;
-    
-}
-
-/* Container para os inputs com rótulos flutuantes */
-.inputdiv {
-    position: relative;
-}
-
-/* Estilo do campo de entrada */
-.inputUser {
-    background: none;
-    border: none;
-    border-bottom: 1px solid white; /* Apenas borda inferior */
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px; /* Espaçamento entre letras */
-}
-
-/* Rótulo flutuante que aparece sobre o input */
-.labelinput {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none; /* Evita cliques no rótulo */
-    transition: .5s; /* Animação suave ao interagir */
-}
-
-/* Move o rótulo para cima quando o input está focado ou preenchido */
-.inputUser:focus ~ .labelinput,
-.inputUser:valid ~ .labelinput {
-    top: -20px;
-    font-size: 10px;
-    color: rgb(89, 88, 88); /* Cor escura ao flutuar */
-}
-
-/* Botão de envio */
-#submit {
-    background-color: rgb(169, 132, 203);; /* Cor padrão do botão */
-    padding: 15px;
-    width: 100%;
-    border: none;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-/* Efeito hover no botão de envio */
-#submit:hover {
-    background-color: rgb(74, 73, 73); /* Tom mais escuro ao passar o mouse */
-}
+        /* Estilos personalizados opcionais para espaçamento */
+        body {
+            background-color: #f8f9fa; /* Cor de fundo leve */
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
