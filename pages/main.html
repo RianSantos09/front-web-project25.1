@@ -35,7 +35,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="../pages/atividade-3.html">SAND BOX</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="../pages/formulario.html">CADASTRO</a>
         </li>
@@ -77,9 +77,10 @@
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="pesquisar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit"><img src="../assets/img/lupa.png" alt=""></button>
+        <button class="btn btn-outline" type="submit"><img src="../assets/img/lupa.png" alt=""></button>
       </form>
     </div>
+    
   </div>
 </nav>
         
@@ -88,33 +89,47 @@
     <!-- Conteúdo principal da página -->
     <main>
         <!-- Container do slider de imagens de produtos whey -->
-        <div class="slider-whey">
-            <!-- Botão para imagem anterior -->
-            
-            <button id="prevbutton"><img src="../assets/img/seta-direita.png" alt="anterior"></button>
-            
+    <div class="slider-whey">
+    <button id="prevbutton"><img src="../assets/img/seta-direita.png" alt="anterior"></button>
 
-            <!-- Container das imagens do slider -->
-            <div class="img-whey">
-                <!-- Imagens dos produtos, com a primeira ativa (classe 'on') -->
-                <img src="../assets/img/whey170X200/delicius_beijinho_de_coco170X200.png" alt="delicius_beijinho_de_coco" class="slider on">
-                <img src="../assets/img/whey170X200/delicius_doce_de_leite170X200.png" alt="delicius_doce_de_leite" class="slider">
-                <img src="../assets/img/whey170X200/dux170X200.png" alt="dux" class="slider">
-                <img src="../assets/img/whey170X200/maxNatural170X200.png" alt="maxNatural" class="slider">
-               <img src="../assets/img/whey170X200/max170x200.png" alt="max100%" class="slider"> <!-- Corrigido alt para refletir o nome -->
-            </div>  
-            
-            <!-- Botão para imagem seguinte -->
-         
-               <button id="nextbutton"> <img src="../assets/img/seta-direita.png" alt="proximo"></button>   
-            
+    <div class="img-whey">
+        <div class="slider on"> <img src="../assets/img/whey170X200/delicius_beijinho_de_coco170X200.png" alt="delicius_beijinho_de_coco">
+            <p class="product-title">Whey Delicius Beijinho de Coco</p>
+            <p class="product-price">R$ 99,90</p>
+            </div>
+        
+        <div class="slider">
+            <img src="../assets/img/whey170X200/delicius_doce_de_leite170X200.png" alt="delicius_doce_de_leite">
+            <p class="product-title">Whey Delicius Doce de Leite</p>
+            <p class="product-price">R$ 105,00</p>
         </div>
         
+        <div class="slider">
+            <img src="../assets/img/whey170X200/dux170X200.png" alt="dux">
+            <p class="product-title">Whey DUX Nutrition</p>
+            <p class="product-price">R$ 119,90</p>
+        </div>
+        
+        <div class="slider">
+            <img src="../assets/img/whey170X200/maxNatural170X200.png" alt="maxNatural">
+            <p class="product-title">Whey Max Titanium Natural</p>
+            <p class="product-price">R$ 89,90</p>
+        </div>
+        
+        <div class="slider">
+            <img src="../assets/img/whey170X200/max170x200.png" alt="max100%">
+            <p class="product-title">Whey Max Titanium 100%</p>
+            <p class="product-price">R$ 95,50</p>
+        </div>
+    </div>  
+    
+    <button id="nextbutton"> <img src="../assets/img/seta-direita.png" alt="proximo"></button>   
+</div>      
     </main>
 
     <!-- Seção lateral (pode ser usada para banners, links ou promoções) -->
     <aside></aside>
-
+    
     <!-- Rodapé da página -->
     <footer id="footer">
         <div class="footer-content">
@@ -132,7 +147,8 @@
                     <img src="../assets/img/whatsapp.png" alt="WhatsApp">
                 </a>
             </div>
-        </div>
+        </div>  
     </footer>
+
 </body>
 </html>

@@ -1,32 +1,53 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const slider = document.querySelectorAll('.slider'); 
+    const sliderItems = document.querySelectorAll('.slider-whey .slider'); 
     const prevbutton = document.getElementById('prevbutton');
     const nextbutton = document.getElementById('nextbutton');
 
-    let carrossel = 0;
+    // --- DEBUGGING: Verifique se os elementos foram encontrados ---
+    console.log("Slider Items encontrados:", sliderItems.length);
+    console.log("Prev Button encontrado:", prevbutton);
+    console.log("Next Button encontrado:", nextbutton);
+    // --- FIM DEBUGGING ---
 
-    function hideSlider(){
-        slider.forEach(item => item.classList.remove('on'));
+    let currentSlideIndex = 0;
+
+    function hideAllSlides(){
+        sliderItems.forEach(item => item.classList.remove('on'));
     }
 
-    function showSlider(){
-        slider[carrossel].classList.add('on');
+    function showCurrentSlide(){
+        if (sliderItems.length > 0) {
+            sliderItems[currentSlideIndex].classList.add('on');
+        }
     }
 
-    function nextSlider(){
-        hideSlider();
-        carrossel = (carrossel === slider.length - 1) ? 0 : carrossel + 1;
-        showSlider();
+    function nextSlide(){
+        hideAllSlides();
+        currentSlideIndex = (currentSlideIndex === sliderItems.length - 1) ? 0 : currentSlideIndex + 1;
+        showCurrentSlide();
+        console.log("Próximo slide. Índice atual:", currentSlideIndex); // DEBUG
     }
 
-    function prevSlider(){
-        hideSlider();
-        carrossel = (carrossel === 0) ? slider.length - 1 : carrossel - 1;
-        showSlider();
+    function prevSlide(){
+        hideAllSlides();
+        currentSlideIndex = (currentSlideIndex === 0) ? sliderItems.length - 1 : currentSlideIndex - 1;
+        showCurrentSlide();
+        console.log("Slide anterior. Índice atual:", currentSlideIndex); // DEBUG
     }
 
-    nextbutton.addEventListener('click', nextSlider);
-    prevbutton.addEventListener('click', prevSlider);
+    if (nextbutton) {
+        nextbutton.addEventListener('click', nextSlide);
+    } else {
+        console.error("Erro: Botão 'nextbutton' não encontrado!"); // DEBUG
+    }
+    
+    if (prevbutton) {
+        prevbutton.addEventListener('click', prevSlide);
+    } else {
+        console.error("Erro: Botão 'prevbutton' não encontrado!"); // DEBUG
+    }
+
+    showCurrentSlide();
     
 });

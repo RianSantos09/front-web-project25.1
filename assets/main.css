@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Reset de estilos padrão para garantir consistência entre navegadores */
 * {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
@@ -21,12 +24,13 @@ header {
     margin: 3px; /* Margem externa de 3px */
     flex: 1 1 100vw; /* Ocupa 100% da largura da viewport */
     background-color: rgb(135, 5, 5); /* Cor de fundo vermelho escuro */
-    height: 40px; /* Altura fixa de 40px */
+    height: 50px; /* Altura fixa de 40px */
     width: 40px; /* Largura fixa de 40px (parece um erro, talvez quisesse 100vw?) */
     color: #ffffff; /* Cor do texto branco */
     justify-content: center;  /* Alinha horizontalmente */
     align-items: center;      /* Alinha verticalmente */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte personalizada */
+    padding: 30px;
 }
 
 /* Estilo da barra de navegação */
@@ -127,6 +131,35 @@ aside {
     background-color: transparent;
 }
 
+/* Estilos para os botões de navegação */
+#prevbutton, #nextbutton {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+#prevbutton {
+    /* Mude para 0px ou até mesmo dentro do container para teste */
+    left: 0px; /* Alinhe com a borda esquerda do .slider-whey */
+}
+
+#nextbutton {
+    /* Mude para 0px ou até mesmo dentro do container para teste */
+    right: 0px; /* Alinhe com a borda direita do .slider-whey */
+}
+
 /* Container da imagem */
 .img-whey {
     position: relative; /* Necessário para posicionar os sliders absolutamente dentro */
@@ -138,10 +171,15 @@ aside {
 
 /* Imagens do slider */
 .slider {
+    text-transform: uppercase;
+    font-weight: bold;
     opacity: 0; /* Inicialmente invisível */
     transition: opacity .2s; /* Transição suave */
     position: absolute; /* Posicionamento absoluto dentro do container */
     width: 100%; /* Ocupa toda a largura do container */
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 10%;
 }
 
 /* Botão anterior */
@@ -150,6 +188,7 @@ aside {
     border: none; /* Sem borda */
     background-color: transparent; /* Fundo transparente */
     cursor: pointer; /* Cursor de clique */   
+    margin-left: 30%;
 }
 
 /* Botão próximo */
@@ -157,6 +196,7 @@ aside {
     border: none; /* Sem borda */
     background-color: transparent; /* Fundo transparente */
     cursor: pointer; /* Cursor de clique */
+    margin-right: 30%;
 }
 
 
@@ -171,7 +211,110 @@ aside {
     opacity: 1; /* Torna visível */
 }
 
-/* Estilos responsivos para tamanhos maiores de tela */
+.product-price{
+    font-size: 35px;
+    color: #b22222;
+}
+
+.product-title{
+    font-size: 30px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .product-card {
+        width: 220px; /* Ajusta largura em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 200px; /* Ajusta largura em telas menores */
+    }
+    .section-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-whey {
+        width: 280px; /* Diminui um pouco a largura do container do slider */
+        margin-left: auto; /* Garante centralização */
+        margin-right: auto;
+    }
+
+    /* Mover as setas para mais perto das bordas em telas menores */
+    #prevbutton {
+        left: 5px; /* Ajuste para mais perto */
+        width: 35px; /* Diminui o tamanho do botão */
+        height: 35px;
+    }
+
+    #nextbutton {
+        right: 5px; /* Ajuste para mais perto */
+        width: 35px; /* Diminui o tamanho do botão */
+        height: 35px;
+    }
+
+    #prevbutton img, #nextbutton img {
+        width: 18px; /* Diminui a imagem da seta */
+        height: 18px;
+    }
+
+    .product-title {
+        font-size: 1em; /* Ajusta o tamanho da fonte do título do produto */
+    }
+
+    .product-price {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte do preço */
+    }
+}
+
+/* Para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .slider-whey {
+        width: 90%; /* Usa porcentagem para ser mais fluido */
+        max-width: 260px; /* Define uma largura máxima para não ficar muito grande em telas pequenas */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #prevbutton {
+        left: 0px; /* Cola na borda */
+        width: 30px; /* Diminui ainda mais */
+        height: 30px;
+    }
+
+    #nextbutton {
+        right: 0px; /* Cola na borda */
+        width: 30px;
+        height: 30px;
+    }
+
+    #prevbutton img, #nextbutton img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 180px; /* Ajusta largura para celular */
+        margin: 0 5px;
+    }
+    .section-title {
+        font-size: 1.8em;
+    }
+    .carousel-nav-button {
+        width: 35px;
+        height: 35px;
+    }
+    .carousel-nav-button img {
+        width: 15px;
+        height: 15px;
+    }
+}
 
 /* Para telas com largura mínima de 768px (tablets) */
 @media (min-width: 768px) {
@@ -187,4 +330,5 @@ aside {
         font-size: 18px; /* Tamanho ainda maior para desktop */
         padding: 40px; /* Maior preenchimento */
     }
+
 }
