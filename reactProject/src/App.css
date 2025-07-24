@@ -1,0 +1,425 @@
+/* --- IMPORTS E RESET GERAL --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset de estilos padrão para garantir consistência entre navegadores */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho total do elemento */
+}
+
+/* --- ESTILOS DO LAYOUT PRINCIPAL --- */
+body {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    font-size: 14px; /* Tamanho da fonte padrão para dispositivos móveis */
+    padding: 10px;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+header {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: rgb(135, 5, 5);
+    height: 50px;
+    width: 100%; /* Corrigido: Para ocupar 100% da largura do pai */
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+/* --- ESTILOS DA BARRA DE NAVEGAÇÃO (#menu) --- */
+#menu {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 16px 0;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1 1 100vw; /* Garante que o menu ocupe toda a largura */
+    margin: 3px;
+}
+
+#menu a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#menu a:hover {
+    background-color: #b22222;
+    transform: scale(1.05);
+}
+
+/* --- ESTILOS DA ÁREA PRINCIPAL (main) --- */
+main {
+    display: flex;
+    flex-direction: column; /* Assumindo que você pode ter mais de um item no main */
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: white;
+    align-items: center; /* Centraliza horizontalmente o conteúdo do main */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    padding: 20px 0; /* Adiciona um padding vertical para separar do header/footer */
+}
+
+/* --- ESTILOS DA BARRA LATERAL (aside) --- */
+aside {
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: rgb(135, 5, 5);
+    min-height: 50px; /* Adicionei uma altura mínima para ser visível */
+}
+
+/* --- ESTILOS DO RODAPÉ (#footer) --- */
+#footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    flex: 1 1 100vw; /* Garante que o footer ocupe a largura total */
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+/* --- ESTILOS DO SLIDER DE PRODUTOS --- */
+.slider-whey {
+    display: flex;
+    position: relative; /* FUNDAMENTAL: para que #prevbutton e #nextbutton se posicionem em relação a ele */
+    width: 30%; /* Largura padrão, será ajustada por media queries */
+    min-height: 300px; /* Altura mínima para o slider ser visível */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: transparent; /* Já estava transparente */
+    margin-top: 10px;
+    margin-bottom: 40px;
+    max-width: 500px; /* Adicionei um max-width para evitar que cresça demais */
+}
+
+/* Estilos para os botões de navegação */
+#prevbutton, #nextbutton {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente em relação ao .slider-whey */
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    border: none; /* Mantive sem borda como no original */
+    background-color: transparent; /* Mantive transparente como no original */
+}
+
+#prevbutton {
+    left: -50px; /* Posição à esquerda do container .slider-whey */
+    transform: rotate(180deg) translateY(50%); /* Ajuste a rotação e translação */
+}
+
+#nextbutton {
+    right: -50px; /* Posição à direita do container .slider-whey */
+}
+
+#prevbutton img, #nextbutton img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a imagem se ajuste ao botão */
+}
+
+
+/* Container da imagem do produto */
+.img-whey {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa a largura total do .slider-whey */
+    min-height: 250px; /* Altura mínima para o conteúdo */
+}
+
+/* Imagens do slider */
+.slider {
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0; /* Alinha ao topo do .img-whey */
+    left: 0;
+    padding-top: 20px; /* Espaço para o título/imagem */
+}
+
+.product-price {
+    font-size: 35px;
+    color: #b22222;
+}
+
+.product-title {
+    font-size: 30px;
+}
+
+/* Classe para imagem visível no slider */
+.on {
+    opacity: 1;
+}
+
+
+/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+
+/* Ajustes gerais para telas menores que 1024px (tablets e celulares) */
+@media (max-width: 1024px) {
+    /* Ajustes para o header */
+    header {
+        padding: 20px;
+    }
+
+    /* Ajustes para o menu */
+    #menu {
+        gap: 15px;
+    }
+    #menu a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* Ajustes do slider */
+    .slider-whey {
+        width: 45%; /* Aumenta a largura em telas médias para melhor visualização */
+        max-width: 400px; /* Limita o tamanho em telas médias */
+    }
+
+    #prevbutton {
+        left: -40px;
+    }
+
+    #nextbutton {
+        right: -40px;
+    }
+
+    .product-title {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título do produto */
+    }
+
+    .product-price {
+        font-size: 30px; /* Ajusta o tamanho da fonte do preço */
+    }
+}
+
+/* Ajustes para telas menores que 768px (tablets em modo retrato e celulares grandes) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header {
+        height: 60px; /* Aumenta um pouco a altura do header */
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    #menu {
+        padding: 10px 0;
+        gap: 10px;
+    }
+    #menu a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    /* Slider ajustado para telas menores */
+    .slider-whey {
+        width: 80%; /* Mais largura em celulares */
+        max-width: 350px; /* Limita um pouco */
+        margin-left: auto; /* Centraliza */
+        margin-right: auto;
+    }
+
+    #prevbutton, #nextbutton {
+        width: 35px;
+        height: 35px;
+        top: 50%; /* Mantém centralizado verticalmente */
+    }
+    #prevbutton {
+        left: -30px; /* Aproxima um pouco mais das bordas */
+        transform: rotate(180deg) translateY(50%);
+    }
+    #nextbutton {
+        right: -30px;
+    }
+
+    #prevbutton img, #nextbutton img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-price {
+        font-size: 25px;
+    }
+
+    .footer-links {
+        gap: 10px;
+    }
+    .footer-links a {
+        font-size: 12px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    header {
+        height: 50px;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #menu {
+        padding: 8px 0;
+        gap: 5px;
+    }
+    #menu a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .slider-whey {
+        width: 95%; /* Quase largura total */
+        max-width: 280px; /* Limite apertado */
+    }
+
+    #prevbutton, #nextbutton {
+        width: 30px;
+        height: 30px;
+    }
+    #prevbutton {
+        left: -20px;
+        transform: rotate(180deg) translateY(50%);
+    }
+    #nextbutton {
+        right: -20px;
+    }
+
+    #prevbutton img, #nextbutton img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 22px;
+    }
+
+    .footer-links {
+        flex-direction: column; /* Links em coluna */
+        gap: 5px;
+    }
+}
+
+/* Para telas com largura mínima de 768px (tablets e desktops) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* Para telas com largura mínima de 1024px (desktops grandes) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+}
+
+/* Estilos relacionados a .product-card - Não vi no HTML fornecido, mas mantive as media queries para eles */
+@media (max-width: 1024px) {
+    .product-card {
+        width: 220px; /* Ajusta largura em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 200px; /* Ajusta largura em telas menores */
+    }
+    .section-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 180px; /* Ajusta largura para celular */
+        margin: 0 5px;
+    }
+    .section-title {
+        font-size: 1.8em;
+    }
+    .carousel-nav-button { /* Parece um nome de classe diferente para os botões do slider */
+        width: 35px;
+        height: 35px;
+    }
+    .carousel-nav-button img {
+        width: 15px;
+        height: 15px;
+    }
+}
