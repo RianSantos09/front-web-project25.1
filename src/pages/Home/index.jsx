@@ -47,6 +47,7 @@ function Home() {
       inputEmail.current.value = ''
       inputSenha.current.value = ''
       
+      
     } catch (error) {
       console.error("Erro ao criar usuário:", error)
       alert("Erro ao cadastrar usuário! Verifique se os campos estão preenchidos corretamente.")
