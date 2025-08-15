@@ -20,9 +20,14 @@ function Home() {
     }
   }
 
-    async function deletUsers(id) {
+  async function deletUsers(id) {
+    try {
       await api.delete(`/usuarios/${id}`)
-      getUsers()
+      // ✅ Atualiza a lista após a exclusão
+      getUsers() 
+    } catch (error) {
+      console.error("Erro ao deletar usuário:", error)
+    }
   }
 
   // Função para criar um novo usuário
@@ -30,36 +35,36 @@ function Home() {
     try {
       await api.post('/usuarios', {
         name: inputNome.current.value,
-        email: inputEmail.current.value,
+       email: inputEmail.current.value,
         senha: inputSenha.current.value
       })
+      
+      // ✅ Atualiza a lista após o cadastro
+      getUsers()
+      
      
-      await getUsers()
-      
-      
-      inputNome.current.value,
-      inputEmail.current.value,
-      inputSenha.current.value 
+      inputNome.current.value = ''
+      inputEmail.current.value = ''
+      inputSenha.current.value = ''
       
     } catch (error) {
-      
       console.error("Erro ao criar usuário:", error)
       alert("Erro ao cadastrar usuário! Verifique se os campos estão preenchidos corretamente.")
     }
   }
 
-  // UseEffect para carregar os usuários na inicialização do componente
+  // ✅ ATUALIZAÇÃO: O useEffect agora recarrega a lista apenas no primeiro carregamento
   useEffect(() => {
     getUsers()
-  }, [])
+  }, []) 
 
   return (
     <div className='container'>
       <form className='fomrulario'>
         <h1>CADASTRO</h1>
-        <input placeholder="Nome" name="nome" type="text" ref={inputNome} />
-       <input placeholder="E-mail" name="email" type="string" ref={inputEmail} />
-        <input placeholder="Senha" name="senha" type="password" ref={inputSenha} />
+        <input placeholder="Nome" name="nome" type="text" ref={inputNome}/>
+        <input placeholder="E-mail" name="email" type="email" ref={inputEmail}/>
+        <input placeholder="Senha" name="senha" type="password" ref={inputSenha}/>
         <button type="button" onClick={createUsers}>CADASTRAR</button>
       </form>
 
@@ -69,9 +74,10 @@ function Home() {
             <div>
               <p>Nome:{user.name}</p>
               <p>Email:{user.email}</p>
+              <p>Senha:{user.senha}</p>
             </div>
             <div>
-              <button id='delet' onClick={() =>deletUsers(user.id)}><img src={Lixeira} alt="Deletar" /></button>
+              <button id='delet' onClick={() => deletUsers(user.id)}><img src={Lixeira} alt="Deletar" /></button>
             </div>
           </div>
         ))
