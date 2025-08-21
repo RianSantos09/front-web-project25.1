@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+:root{
+    --primary-color: rgb(140, 0, 255);
+    --secondary-color: #00498d;
+    --dark-primary-color: #7b00e0;
+    --dark-secondary-color: #00315f;
+    --light-color: #e9e9e9;
+    --dark-color: #2c2c2c;
+}
+
+body{
+    font-family: Arial;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+button{
+    background-color:transparent ;
+    border: none;
+    cursor: pointer;
+}
+/*navbar*/
+.nav{
+    background-color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0px 10px #ebebeb;
+    z-index: 1;
+}
+
+.nav .conteudo-interno{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin-inline:auto; 
+}
+
+.logo{
+    color: var(--primary-color);
+}
+
+.logo span{
+    color: var(--dark-color);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;;
+    gap: 1rem;
+}
+
+.nav-icons svg{
+   height: 1.9rem;
+}
+
+.nav-icons .carrinho{
+    position: relative;
+}
+
+.nav-icons .carrinho{
+    position: relative;
+}
+
+.nav-icons .carrinho .products-count{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 0.7rem;
+    height: 0.8rem;
+    bottom: -8px;
+    left: -8px;
+    border-radius: 50%;
+    color: white;
+    padding:0.7rem; 
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-bottom: 1px solid var(--dark-color);
+    background-color: var(--light-color);
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.pesquisa input{
+    border: none;
+    outline: none;
+}
+
+.pesquisa svg{
+   height: 1rem;
+    color: #808080;
+}
+
+nav UL LI:hover{
+    transform: translateY(-4px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-btn{
+    display: none;
+}
