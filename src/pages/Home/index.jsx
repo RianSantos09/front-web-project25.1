@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
-import './style.css'
 import Lixeira from '../../assets/img/lixeira.png'
 import api from '../../services/api'
+import './style.css'
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -35,8 +35,13 @@ function Home() {
     try {
       await api.post('/usuarios', {
         name: inputNome.current.value,
-       email: inputEmail.current.value,
-        senha: inputSenha.current.value
+        email: inputEmail.current.value,
+        senha: inputSenha.current.value,
+
+        // ✅ NOVOS CAMPOS COM VALORES PADRÃO
+        nivelDeAcesso: 1, 
+        permissoes: "xd",
+        descricao: "dx"
       })
       
       // ✅ Atualiza a lista após o cadastro
