@@ -2,15 +2,18 @@ import React from "react";
 import '../../src/pages/Home/main/main.css';
 import { faBars, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from "react";
 import {Link} from 'react-router-dom';
 
 export default function Navbar() {
-  return            <div className="nav"> 
+    const [show, setshow] = useState(false);
+    return (
+    <div className="nav"> 
                 <div className="conteudo-interno">
                 <h1 className="logo">
                     XP<span>NUTRI</span>
                 </h1>
-                <nav>
+            <nav className={`${show && "show"}`}>
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/">PRODUTOS</Link></li>
@@ -27,10 +30,11 @@ export default function Navbar() {
                         <FontAwesomeIcon icon={faShoppingCart}/>
                     <div className="products-count">56</div>
                     </button>
-                    <button className="menu-btn">
+                    <button className="menu-btn" onClick={() => setshow(!show)}>
                         <FontAwesomeIcon icon={faBars}/>
                     </button>
                 </div>
             </div>
-        </div>;
+        </div>
+        );
 }

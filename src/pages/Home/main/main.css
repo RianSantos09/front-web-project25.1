@@ -127,3 +127,110 @@ nav UL LI:hover{
 .menu-btn{
     display: none;
 }
+
+/*HEADER*/
+
+header{
+background-color: var(--primary-color);
+}
+
+header .inner-content{
+    max-width: 1600px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 4rem;
+    gap: 4rem;
+
+}
+
+header .left-side {
+    color: white;
+}
+
+header .left-side h2{
+    font-size: 2.5rem;
+}
+header .left-side p{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+header .left-side a{
+    color: white;
+}
+
+header .left-side h2{
+    font-size: 2,5rem;
+}
+
+header .left-side p{
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+}
+
+.btn-more{
+    background-color: var(--primary-color);
+    padding:0.8rem 1rem;
+    border-radius:8px ;
+    transition: all 0.2s;
+    display: flex;
+    max-width: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-more:hover{
+    background-color: var(--dark-primary-color);
+    max-width: 200px;
+}
+
+header .right-side img{
+    width: 100%;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 920px){
+    .nav h1{
+        font-size: 1.2rem;
+    }
+
+    header .inner-content{
+        padding: 1,5rem;
+        padding-top: 3rem;
+        gap: 2rem;
+    }   
+
+    header .left-side h2{
+        font-size: 1.8rem;
+    }
+
+    nav{
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 1rem;
+        display: none;
+    }
+
+    nav.show{
+        display: block;
+    }
+
+    nav ul{
+        flex-direction: column;
+
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem ;
+    }
+
+    .menu-btn{
+        display: inline;
+    }
+}
