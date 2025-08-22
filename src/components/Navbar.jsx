@@ -1,16 +1,11 @@
-
-import './main.css';
+import React from "react";
+import '../../src/pages/Home/main/main.css';
 import { faBars, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
-function App(){
-    return (
-        <Router>        
-        <div className="App">
-            <div className="nav"> 
+export default function Navbar() {
+  return            <div className="nav"> 
                 <div className="conteudo-interno">
                 <h1 className="logo">
                     XP<span>NUTRI</span>
@@ -37,10 +32,5 @@ function App(){
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
-        </Router>  
-    );
+        </div>;
 }
-
-export default App;
