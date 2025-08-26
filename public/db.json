@@ -56,13 +56,7 @@
       "rating": 4,
       "price": 80500
     },
-    {
-      "id": 9,
-      "name": "pastaAmendoim",
-      "image": "/img/produtos/pastaAmendoim.png",
-      "rating": 5,
-      "price": 45000
-    },
+
     {
       "id": 10,
       "name": "pre_treino_diaboVedeZcarbo",
@@ -95,13 +89,6 @@
       "id": 14,
       "name": "whey_delicious",
       "image": "/img/produtos/whey_delicious.png",
-      "rating": 5,
-      "price": 450000
-    },
-    {
-      "id": 15,
-      "name": "whey_gourmet_banana",
-      "image": "/img/produtos/whey_gourmet_banana.png",
       "rating": 5,
       "price": 450000
     },

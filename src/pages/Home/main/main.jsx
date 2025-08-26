@@ -27,7 +27,7 @@ function App(){
                         <h3>CONHEÇA NOSSOS PRODUTOS</h3>
                         <div className="uderline"></div>
                     </div>
-                    <div className="products">
+                    <div className="products-container">
                         <ProductsList products={products}/>
                     </div>
                 </div>
