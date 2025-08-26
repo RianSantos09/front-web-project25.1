@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "colageno_ftw",
+      "image": "/img/produtos/colageno_ftw.png",
+      "rating": 4,
+      "price": 4000
+    },
+    {
+      "id": 2,
+      "name": "creatina_500g",
+      "image": "/img/produtos/creatina_500g.png",
+      "rating": 5,
+      "price": 20000
+    },
+    {
+      "id": 3,
+      "name": "creatina_dux",
+      "image": "/img/produtos/creatina_dux.png",
+      "rating": 5,
+      "price": 4000
+    },
+    {
+      "id": 4,
+      "name": "creatina_integral",
+      "image": "/img/produtos/creatina_integral.png",
+      "rating": 3,
+      "price": 17500
+    },
+    {
+      "id": 5,
+      "name": "hiper_calorico_diabo_verde",
+      "image": "/img/produtos/hiper_calorico_diabo_verde.png",
+      "rating": 5,
+      "price": 115000
+    },
+    {
+      "id": 6,
+      "name": "hiperC_max",
+      "image": "/img/produtos/hiperC_max.png",
+      "rating": 5,
+      "price": 110000
+    },
+    {
+      "id": 7,
+      "name": "magnesio",
+      "image": "/img/produtos/magnesio.png",
+      "rating": 4,
+      "price": 65000
+    },
+    {
+      "id": 8,
+      "name": "omega3_ftw",
+      "image": "/img/produtos/omega3_ftw.png",
+      "rating": 4,
+      "price": 80500
+    },
+    {
+      "id": 9,
+      "name": "pastaAmendoim",
+      "image": "/img/produtos/pastaAmendoim.png",
+      "rating": 5,
+      "price": 45000
+    },
+    {
+      "id": 10,
+      "name": "pre_treino_diaboVedeZcarbo",
+      "image": "/img/produtos/pre_treino_diaboVedeZcarbo.png",
+      "rating": 5,
+      "price": 14000
+    },
+    {
+      "id": 11,
+      "name": "pre_treino_sz_amagedon",
+      "image": "/img/produtos/pre_treino_sz_amagedon.png",
+      "rating": 5,
+      "price": 54000
+    },
+    {
+      "id": 12,
+      "name": "pre_treino_sz",
+      "image": "/img/produtos/pre_treino_sz.png",
+      "rating": 5,
+      "price": 450000
+    },
+    {
+      "id": 13,
+      "name": "temo_ftw",
+      "image": "/img/produtos/temo_ftw.png",
+      "rating": 5,
+      "price": 450000
+    },
+    {
+      "id": 14,
+      "name": "whey_delicious",
+      "image": "/img/produtos/whey_delicious.png",
+      "rating": 5,
+      "price": 450000
+    },
+    {
+      "id": 15,
+      "name": "whey_gourmet_banana",
+      "image": "/img/produtos/whey_gourmet_banana.png",
+      "rating": 5,
+      "price": 450000
+    },
+    {
+      "id": 16,
+      "name": "whey_iso_max",
+      "image": "/img/produtos/whey_iso_max.png",
+      "rating": 5,
+      "price": 450000
+    }
+  ]
+}

@@ -234,3 +234,17 @@ header .right-side img{
         display: inline;
     }
 }
+
+@media(max-width: 780px){
+    header .inner-content{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width: 580px){
+    .pesquisa{
+        display: none;
+    }
+
+}
