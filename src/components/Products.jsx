@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
     export default function Products({ id, name, image, rating, price }) {
 
   return (
-    <div  className="product_card">
+    <div  className="product">
       <img src={image} alt={name} />
       <p className='name'>{name}</p>
-      <p className="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      <p className="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <p className="price">
           <span>R$</span>{price} 
           </p>

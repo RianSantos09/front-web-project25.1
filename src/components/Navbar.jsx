@@ -28,7 +28,7 @@ export default function Navbar() {
                     </div>
                     <button className="carrinho">
                         <FontAwesomeIcon icon={faShoppingCart}/>
-                    <div className="products-count">56</div>
+                    <div className="products-count">0</div>
                     </button>
                     <button className="menu-btn" onClick={() => setshow(!show)}>
                         <FontAwesomeIcon icon={faBars}/>

@@ -25,9 +25,10 @@ function App(){
                 <div className='page-inner'>
                     <div className="section-title">
                         <h3>CONHEÇA NOSSOS PRODUTOS</h3>
-                        <div className="uderline"></div>
+                        <div className="underline"></div>
                     </div>
-                    <div className="products-container">
+
+                    <div className="main-content">
                         <ProductsList products={products}/>
                     </div>
                 </div>

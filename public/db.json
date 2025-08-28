@@ -2,102 +2,101 @@
   "products": [
     {
       "id": 1,
-      "name": "colageno_ftw",
-      "image": "/img/produtos/colageno_ftw.png",
-      "rating": 4,
-      "price": 4000
+      "name": "WHEY DELICIOUS",
+      "image": "/img/produtos/whey_delicious.png",
+      "rating": 5,
+      "price": 139.99
     },
     {
       "id": 2,
-      "name": "creatina_500g",
-      "image": "/img/produtos/creatina_500g.png",
+      "name": "WHEY ISO MAX",
+      "image": "/img/produtos/whey_iso_max.png",
       "rating": 5,
-      "price": 20000
+      "price": 249.99
     },
     {
       "id": 3,
-      "name": "creatina_dux",
-      "image": "/img/produtos/creatina_dux.png",
+      "name": "CREATINA 500G",
+      "image": "/img/produtos/creatina_500g.png",
       "rating": 5,
-      "price": 4000
+      "price": 84.99
     },
     {
       "id": 4,
-      "name": "creatina_integral",
-      "image": "/img/produtos/creatina_integral.png",
-      "rating": 3,
-      "price": 17500
+      "name": "CREATINA DUX",
+      "image": "/img/produtos/creatina_dux.png",
+      "rating": 5,
+      "price": 89.99
     },
     {
       "id": 5,
-      "name": "hiper_calorico_diabo_verde",
-      "image": "/img/produtos/hiper_calorico_diabo_verde.png",
-      "rating": 5,
-      "price": 115000
+      "name": "CREATINA INTEGRAL",
+      "image": "/img/produtos/creatina_integral.png",
+      "rating": 3,
+      "price": 74.99
     },
     {
       "id": 6,
-      "name": "hiperC_max",
-      "image": "/img/produtos/hiperC_max.png",
+      "name": "HIPER CALORICO DIABO VERDE",
+      "image": "/img/produtos/hiper_calorico_diabo_verde.png",
       "rating": 5,
-      "price": 110000
+      "price": 84.99
     },
     {
       "id": 7,
-      "name": "magnesio",
-      "image": "/img/produtos/magnesio.png",
-      "rating": 4,
-      "price": 65000
+      "name": "HIPER CÁLORICO MAX",
+      "image": "/img/produtos/hiperC_max.png",
+      "rating": 5,
+      "price": 74.99
     },
     {
       "id": 8,
-      "name": "omega3_ftw",
-      "image": "/img/produtos/omega3_ftw.png",
-      "rating": 4,
-      "price": 80500
-    },
-
-    {
-      "id": 10,
-      "name": "pre_treino_diaboVedeZcarbo",
+      "name": "PRÉ TREINO DIABO VERDE ZCARBO",
       "image": "/img/produtos/pre_treino_diaboVedeZcarbo.png",
       "rating": 5,
-      "price": 14000
+      "price": 109.99
+    },
+    {
+      "id": 9,
+      "name": "PRÉ TREINO SZ AMAGEDON",
+      "image": "/img/produtos/pre_treino_sz_amagedon.png",
+      "rating": 5,
+      "price": 49.99
+    },
+    {
+      "id": 10,
+      "name": "PRÉ TREINO SZ",
+      "image": "/img/produtos/pre_treino_sz.png",
+      "rating": 5,
+      "price": 74.99
     },
     {
       "id": 11,
-      "name": "pre_treino_sz_amagedon",
-      "image": "/img/produtos/pre_treino_sz_amagedon.png",
-      "rating": 5,
-      "price": 54000
+      "name": "COLAGENO FTW",
+      "image": "/img/produtos/colageno_ftw.png",
+      "rating": 4,
+      "price": 69.99
     },
     {
       "id": 12,
-      "name": "pre_treino_sz",
-      "image": "/img/produtos/pre_treino_sz.png",
-      "rating": 5,
-      "price": 450000
+      "name": "MAGNÉSIO",
+      "image": "/img/produtos/magnesio.png",
+      "rating": 4,
+      "price": 79.99
     },
     {
       "id": 13,
-      "name": "temo_ftw",
-      "image": "/img/produtos/temo_ftw.png",
-      "rating": 5,
-      "price": 450000
+      "name": "OMEGA 3 FTW",
+      "image": "/img/produtos/omega3_ftw.png",
+      "rating": 4,
+      "price": 49.99
     },
     {
       "id": 14,
-      "name": "whey_delicious",
-      "image": "/img/produtos/whey_delicious.png",
+      "name": "TEMO FTW",
+      "image": "/img/produtos/temo_ftw.png",
       "rating": 5,
-      "price": 450000
-    },
-    {
-      "id": 16,
-      "name": "whey_iso_max",
-      "image": "/img/produtos/whey_iso_max.png",
-      "rating": 5,
-      "price": 450000
+      "price": 69.99
     }
   ]
 }

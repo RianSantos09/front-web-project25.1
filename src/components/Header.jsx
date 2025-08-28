@@ -8,7 +8,7 @@ export default function Header() {
   <header>
     <div className="inner-content">
     <div className="left-side">
-        <h2>De uma nova experiencia ao seu treino!</h2>
+        <h2>DE UMA NOVA EXPERIENCIA AO SEU TREINO!</h2>
         <p>"O progresso nem sempre tem a ver com grandes saltos, mas sim com a consistência, o treino consistente e a suplementação certa superam a estagnação, os resultados virão."</p>
         <Link to="/produtos" className="btn-more">
         <span>Ver Agora</span>
