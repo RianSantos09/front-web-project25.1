@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import Lixeira from '../../assets/img/lixeira.png'
 import api from '../../services/api'
-import './style.css'
+import '../index/style.css'
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -65,7 +65,8 @@ function Home() {
   }, []) 
 
   return (
-    <div className='container'>
+    <div className="body-container "> 
+    <div className='container-form'>
       <form className='fomrulario'>
         <h1>CADASTRO</h1>
         <input placeholder="Nome" name="nome" type="text" ref={inputNome}/>
@@ -90,6 +91,7 @@ function Home() {
       ) : (
         <p>Nenhum usuário cadastrado.</p>
       )}
+    </div>
     </div>
   )
 }

@@ -1,14 +1,14 @@
-.container{
+.container-form{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
 }
 
-body{
+.body-container{
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, #1b354b 0%, #2291ff 50%, #4364c7 75%, #000080 100%);
+  background: linear-gradient(135deg, #2a4155 0%, #2291ff 50%, #4364c7 75%, #000080 100%);
 }
 
 h1{
