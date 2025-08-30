@@ -72,7 +72,7 @@ function Home() {
         <input placeholder="Nome" name="nome" type="text" ref={inputNome}/>
         <input placeholder="E-mail" name="email" type="email" ref={inputEmail}/>
         <input placeholder="Senha" name="senha" type="password" ref={inputSenha}/>
-        <button type="button" onClick={createUsers}>CADASTRAR</button>
+        <button type="button-cad" onClick={createUsers}>CADASTRAR</button>
       </form>
 
       {users.length > 0 ? (

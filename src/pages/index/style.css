@@ -30,7 +30,7 @@ form{
 
 }
 
-button{
+.button-cad{
     border-radius: 30px;
     background-color: rgba(37, 37, 126, 0.663);
     height: 40px;

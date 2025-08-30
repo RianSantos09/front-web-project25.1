@@ -284,11 +284,13 @@ main{
 }
 
 .product .name{
+    color: var(--dark-color);
     font-weight: bold;
     margin-top: 4rem;
 }
 
 .product .price{
+    color: var(--dark-color);
     margin-top: 0.4rem;
 }
 
@@ -318,6 +320,7 @@ main{
 }
 
 .btn_carrinho{
+    color: rgb(12, 12, 12);
      background-color: var(--secondary-color);
 }
 

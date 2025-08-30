@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 import {Link} from 'react-router-dom';
 
-
 export default function Navbar() {
     const [show, setshow] = useState(false);
     return (
@@ -18,7 +17,7 @@ export default function Navbar() {
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/">PRODUTOS</Link></li>
-                        <li><Link to="/">CADASTRO</Link></li>
+                        <li><Link to="/cadastro">CADASTRO</Link></li>
                         <li><Link to="/">CONTATO</Link></li>
                     </ul>
                 </nav>
