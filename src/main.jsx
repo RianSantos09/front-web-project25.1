@@ -17,6 +17,6 @@ import App from './pages/Home/main/App.jsx'
 /* mude essa <App /> pelo <Home />*/
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <Home/>
   </StrictMode>,
 )
