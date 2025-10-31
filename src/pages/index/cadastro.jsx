@@ -30,7 +30,6 @@ function Home() {
     }
   }
 
-  // Função para criar um novo usuário
   async function createUsers() {
     try {
       await api.post('/usuarios', {
@@ -58,6 +57,8 @@ function Home() {
       alert("Erro ao cadastrar usuário! Verifique se os campos estão preenchidos corretamente.")
     }
   }
+
+  
 
   // ✅ ATUALIZAÇÃO: O useEffect agora recarrega a lista apenas no primeiro carregamento
   useEffect(() => {
